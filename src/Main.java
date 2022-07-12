@@ -5,7 +5,7 @@ public class Main {
 
         while(player1.getScore() < 21 && player2.getScore() < 21){
 
-            player1.sumCardToScore();
+            player1.sumCardToScore(randomCard());
             System.out.println(player1.getName() + " has " + player1.getScore() + " points.");
 
             if(player1.getScore() > 21) {
@@ -17,7 +17,7 @@ public class Main {
                 break;
             }
 
-            player2.sumCardToScore();
+            player2.sumCardToScore(randomCard());
             System.out.println(player2.getName() + " has " + player2.getScore() + " points.");
 
             if (player2.getScore() > 21) {

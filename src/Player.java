@@ -14,8 +14,8 @@ public class Player {
         return score;
     }
 
-    public void sumCardToScore() {
-        score = score + Main.randomCard();
+    public void sumCardToScore(int toAdd) {
+        score = score + toAdd;
 
     }
 
