@@ -1,24 +1,22 @@
 public class Player {
 
-
-    private String name;
-    private int handCounter;
+    private final String name;
+    private int score;
 
 
     public Player (String name){
         this.name = name;
-        this.handCounter = 0;
+        this.score = 0;
     }
 
 
-    public int getHandCounter() {
-        return handCounter;
+    public int getScore() {
+        return score;
     }
 
-    public void sumHandCounter() {
-        handCounter = handCounter + Main.randomCard();
+    public void sumCardToScore() {
+        score = score + Main.randomCard();
 
-        return;
     }
 
     public String getName() {
